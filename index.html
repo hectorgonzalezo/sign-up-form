@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,46 @@
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
-    
-    <img src="./images/oren.jpg" alt="Picture of seashore">
-    <p>Picture from <a href="https://unsplash.com/@artbyhybrid?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Madison Oren</a> in <a href="https://unsplash.com/es/t/experimental?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
-  
+
+    <div id="image-div">
+        <img src="./images/lavender.jpg" alt="Picture of lavender flowers">
+        <p id="credit">
+            Photo by <a
+                href="https://unsplash.com/@eugene_golovesov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eugene
+                Golovesov</a> in <a
+                href="https://unsplash.com/es/t/experimental?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </p>
+        <div id="logo-div">
+            <img src="./images/odin-logo.png" alt="Logo" id="logo">
+            <h1>Project Lavender</h1>
+        </div>
+    </div>
+    <div id="right-side">
+        <div id="legend-div">
+            <h2>This is not a real online service!
+                You know you need something like this in you life to help you
+                realize your deepest dreams.
+                <br>
+                Sign up <em>now</em> to get started.
+                <br>
+                <br>
+                You <em>know</em> you want to.
+            </h2>
+        </div>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Let's do this!</legend>
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" class="firstName">
+            </fieldset>
+            <button type="submit">Create Account</button>
+        </form>
+        <div id="log-in-div">
+            <p>Already have an account? <a href="">Log in</a></p>
+        </div>
+    </div>
 </body>
+
 </html>

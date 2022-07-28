@@ -8,7 +8,64 @@
     font-style: normal;
 }
 
+body {
+    display: flex;
+    font-family: inconsolata, 'Arial' sans-serif;
+    position: relative;
+    background-color: aliceblue;
+    height: 100vh;
+}
+
+#image-div {
+    position: relative;
+}
+
 img{
     width: 400px;
     height: 800px;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+}
+
+#logo-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -500px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 0.6rem;
+}
+
+#logo-div > * {
+    opacity: 1;
+}
+
+#credit {
+    position: relative;
+    top: -100px;
+    left: 60px;
+    color: white;
+}
+
+#right-side {
+    display:flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    
+}
+
+form {
+    display: flex;
+    height: 50vh;
+    flex-flow: column nowrap;
+}
+
+fieldset {
+    background-color: red;
+    height: 60%;
 }
