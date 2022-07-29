@@ -10,19 +10,19 @@
 </head>
 
 <body>
-
     <div id="image-div">
-        <img src="./images/lavender.jpg" alt="Picture of lavender flowers">
+        <div id="logo-div">
+            <img src="./images/odin-logo.png" alt="Logo" id="logo">
+            <h1 id="title">Lavender</h1>
+        </div>
+        <img src="./images/lavender.jpg" alt="Picture of lavender flowers" id="lavender-img">
         <p id="credit">
             Photo by <a
                 href="https://unsplash.com/@eugene_golovesov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eugene
                 Golovesov</a> in <a
                 href="https://unsplash.com/es/t/experimental?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
         </p>
-        <div id="logo-div">
-            <img src="./images/odin-logo.png" alt="Logo" id="logo">
-            <h1>Project Lavender</h1>
-        </div>
+
     </div>
     <div id="right-side">
         <div id="legend-div">
@@ -39,8 +39,30 @@
         <form action="" method="post">
             <fieldset>
                 <legend>Let's do this!</legend>
-                <label for="firstName">First Name</label>
-                <input type="text" name="firstName" id="firstName" class="firstName">
+                <div>
+                    <label for="firstName">FIRST NAME</label>
+                    <input type="text" name="firstName" id="firstName" class="firstName">
+                </div>
+                <div>
+                    <label for="lastName">LAST NAME</label>
+                    <input type="text" name="lastName" id="lastName">
+                </div>
+                <div>
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="phoneNumber">PHONE NUMBER</label>
+                    <input type="tel" name="phoneNumber" id="phoneNumber">
+                </div>
+                <div>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div>
+                    <label for="passwordConfirm">CONFIRM PASSWORD</label>
+                    <input type="password" name="passwordConfirm" id="passwordConfirm">
+                </div>
             </fieldset>
             <button type="submit">Create Account</button>
         </form>

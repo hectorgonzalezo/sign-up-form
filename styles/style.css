@@ -18,27 +18,35 @@ body {
 
 #image-div {
     position: relative;
+    top: auto;
 }
 
-img{
-    width: 400px;
-    height: 800px;
+#lavender-img {
+    width: calc(100px + 40vh);
+    height: 100vh;
 }
 
 #logo {
-    width: 100px;
-    height: 100px;
+    --logo-size : calc(20px + 10vh);
+    width: calc(var(--logo-size) - 3vh);
+    height: var(--logo-size);
+}
+
+#title {
+    font-size: 4rem;
 }
 
 #logo-div {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    top: -500px;
+    position: absolute;
+    gap: 1vh;
+    top: 30vh;
+    width: 100%;
     color: white;
     background-color: rgba(0, 0, 0, 0.4);
-    padding: 0.6rem;
+    padding: 10px 0px 10px;
 }
 
 #logo-div > * {
@@ -47,9 +55,13 @@ img{
 
 #credit {
     position: relative;
-    top: -100px;
-    left: 60px;
-    color: white;
+    top: -5vh;
+    left: 7vh;
+    color: rgb(231, 207, 197);
+}
+
+#credit  a {
+    color: rgb(255, 211, 182)
 }
 
 #right-side {
