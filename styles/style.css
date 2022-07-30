@@ -163,7 +163,9 @@ fieldset div {
     margin: auto;
     gap: 3px;
 }
-
+label {
+    font-size: 1rem;
+}
 
 fieldset input {
     border: 1px solid black;
@@ -190,6 +192,21 @@ fieldset input:invalid:not(:placeholder-shown) {
 fieldset input:valid {
     border: 2px solid green;
     margin: 2px;
+}
+
+body fieldset .error {
+    border: 2px solid red;
+    margin: 2px;
+}
+
+body fieldset .error + span::after {
+    content : "Passwords don't match";
+    background-color: rgba(206, 32, 32, 0.725);
+    color: white;
+    padding: 3px;
+    position: absolute;
+    top: 70px;
+    left: auto;
 }
 
 button[type="submit"] {

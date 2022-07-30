@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/script.js" defer></script>
 </head>
 
 <body>
@@ -78,9 +79,9 @@
                     name="password" 
                     id="password"
                     placeholder="Password" 
-                    class="error"
                     minlength="6"
                     title="Password must be at least 6 characters long"
+                    onChange="onChange()"
                     required>
                 </div>
                 <div>
@@ -91,8 +92,9 @@
                     placeholder="Confirm Password"
                     minlength="6"
                     title="Password must be at least 6 characters long"
-                    class="error"
+                    onChange="onChange()"
                     required>
+                    <span></span>
                 </div>
             </fieldset>
             <button type="submit">Create Account</button>
