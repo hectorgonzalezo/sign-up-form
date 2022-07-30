@@ -39,27 +39,60 @@
                 <h3>Let's do this!</h3>
                 <div>
                     <label for="firstName">FIRST NAME</label>
-                    <input type="text" name="firstName" id="firstName" class="firstName">
+                    <input type="text" 
+                    name="firstName" 
+                    id="firstName" 
+                    class="firstName" 
+                    placeholder="First Name" 
+                    pattern="\w+"
+                    required >
                 </div>
                 <div>
                     <label for="lastName">LAST NAME</label>
-                    <input type="text" name="lastName" id="lastName">
+                    <input type="text" 
+                    name="lastName" 
+                    id="lastName" 
+                    placeholder="Last Name" 
+                    pattern="\w+"
+                    required>
                 </div>
                 <div>
                     <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" 
+                    name="email" 
+                    id="email" 
+                    placeholder="Email" 
+                    required>
                 </div>
                 <div>
                     <label for="phoneNumber">PHONE NUMBER</label>
-                    <input type="tel" name="phoneNumber" id="phoneNumber">
+                    <input type="tel" 
+                    name="phoneNumber" 
+                    id="phoneNumber" 
+                    placeholder="Phone Number"
+                    required>
                 </div>
                 <div>
                     <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password">
+                    <input type="password" 
+                    name="password" 
+                    id="password"
+                    placeholder="Password" 
+                    class="error"
+                    minlength="6"
+                    title="Password must be at least 6 characters long"
+                    required>
                 </div>
                 <div>
                     <label for="passwordConfirm">CONFIRM PASSWORD</label>
-                    <input type="password" name="passwordConfirm" id="passwordConfirm">
+                    <input type="password" 
+                    name="passwordConfirm" 
+                    id="passwordConfirm" 
+                    placeholder="Confirm Password"
+                    minlength="6"
+                    title="Password must be at least 6 characters long"
+                    class="error"
+                    required>
                 </div>
             </fieldset>
             <button type="submit">Create Account</button>
