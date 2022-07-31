@@ -37,7 +37,6 @@
     --left-margin-form: 40px;
 }
 
-
 body {
     display: flex;
     font-family: inconsolata, 'Arial'sans-serif;
@@ -157,7 +156,6 @@ fieldset>h3 {
 fieldset div {
     display: flex;
     flex-direction: column;
-    position: relative;
     width: calc(40% - var(--left-margin-form));
     padding: 10px 30px 10px 30px;
     margin: auto;
@@ -204,9 +202,10 @@ body fieldset .error + span::after {
     background-color: rgba(206, 32, 32, 0.725);
     color: white;
     padding: 3px;
-    position: absolute;
-    top: 70px;
-    left: auto;
+}
+
+body fieldset .error + span {
+    margin-top: 8px;
 }
 
 button[type="submit"] {
